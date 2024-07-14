@@ -16,7 +16,8 @@ int main()
   const std::string account_number = "CharlieBrown42";
   char user_input[20];
   std::cout << "Enter a value: ";
-  std::cin >> user_input;
+  // std::cin >> user_input;
+  std::cin.get(user_input, 20); // std::cin.get only gets 20 charz 
 
   std::cout << "You entered: " << user_input << std::endl;
   std::cout << "Account Number = " << account_number << std::endl;
