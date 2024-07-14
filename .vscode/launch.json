@@ -1,0 +1,36 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Build and Debug C++",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "${workspaceFolder}/BufferOverflow",
+			"args": [],
+			"stopAtEntry": false,
+			"cwd": "${workspaceFolder}",
+			"environment": [],
+			"externalConsole": true,
+			"MIMode": "gdb",
+			"setupCommands": [
+				{
+					"description": "Enable pretty-printing for gdb",
+					"text": "-enable-pretty-printing",
+					"ignoreFailures": true
+				}
+			],
+			"preLaunchTask": "build BufferOverflow",
+			"miDebuggerPath": "/usr/bin/gdb",
+			"logging": {
+				"engineLogging": true
+			}
+		},
+		{
+			"name": "Run Python Script",
+			"type": "python",
+			"request": "launch",
+			"program": "${workspaceFolder}/PythonWithExploit.py",
+			"console": "integratedTerminal"
+		}
+	]
+}
